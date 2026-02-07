@@ -38,13 +38,24 @@ The application demonstrates clean architecture, form validation, API integratio
 
 ## 🧪 Mock API (JSON Server)
 
-This project uses **json-server** as a mock backend for local development.
+This project uses **json-server** as a mock backend to manage user data.
 
-### Endpoint
+### Local Development
+When running the application locally, the backend is powered by json-server.
+
+**Endpoint:**
 http://localhost:3001/users
 
-### db.json Example
+**db.json example:**
 ```json
 {
   "users": []
 }
+Deployed Backend
+For the live deployed application, the same json-server backend is hosted on Render.
+
+Live API endpoint:
+https://react-crud-backend-4cls.onrender.com/users
+
+The frontend dynamically switches API URLs using environment variables (VITE_API_URL),
+allowing the same codebase to work seamlessly in both local and production environments.
