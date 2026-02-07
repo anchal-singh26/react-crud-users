@@ -1,0 +1,134 @@
+/* Page layout */
+.page-wrapper {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 0;
+}
+
+/* Top bar */
+.top-bar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Add button */
+.add-user-btn {
+  background: #ffffff;
+  color: #1e3c72;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-user-btn:hover {
+  background: #e6ecf5;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Table */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table thead {
+  background: linear-gradient(
+    90deg,
+    #dbe7ff,
+    #eef3ff
+  );
+}
+
+.custom-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+.custom-table td {
+  padding: 12px 14px;
+  color: #333;
+}
+
+/* Zebra rows */
+.custom-table tbody tr:nth-child(even) {
+  background: #f8faff;
+}
+
+.custom-table tbody tr:hover {
+  background: #eef3ff;
+}
+
+/* Actions */
+.actions-col {
+  text-align: center;
+}
+
+.action {
+  cursor: pointer;
+  margin: 0 6px;
+  font-size: 16px;
+}
+
+.action.edit {
+  color: #1976d2;
+}
+
+.action.delete {
+  color: #d32f2f;
+}
+
+/* States */
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+}
+
+.info-text {
+  text-align: center;
+}
+.actions-col button {
+  padding: 4px;
+}
+.success-banner {
+  max-width: 70%;         
+  margin: 10px auto;
+  padding: 5px 14px;
+  background: #e6f4ea;
+  color: #1e7e34;
+  border-left: 4px solid #2e7d32;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.user-form-wrapper {
+  padding-top: 10px !important;
+}
